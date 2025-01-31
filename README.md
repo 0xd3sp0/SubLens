@@ -1,6 +1,6 @@
 # SubLens
 
-![GitHub](https://img.shields.io/github/license/0xd3sp0/SubL3ns) ![GitHub issues](https://img.shields.io/github/issues/0xd3sp0/SubL3ns)
+![GitHub](https://img.shields.io/github/license/0xd3sp0/SubLens) ![GitHub issues](https://img.shields.io/github/issues/0xd3sp0/SubLens)
 
 A comprehensive Bash-based tool for passive subdomain enumeration using multiple sources such as Assetfinder, Subfinder, Findomain, CRT.SH, and more. The tool supports both single-domain and bulk scanning with parallel execution for faster results.
 
@@ -43,7 +43,7 @@ You can install these tools using package managers like `apt`, `brew`, or by dow
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/subdomain-enumerator.git
+git clone https://github.com/0xd3sp0/SubLens.git
 cd subdomain-enumerator
 ```
 
