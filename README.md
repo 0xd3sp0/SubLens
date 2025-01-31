@@ -44,7 +44,7 @@ You can install these tools using package managers like `apt`, `brew`, or by dow
 
 ```bash
 git clone https://github.com/0xd3sp0/SubLens.git
-cd subdomain-enumerator
+cd SubLens
 ```
 
 ### Make the Script Executable
