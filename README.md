@@ -1,6 +1,6 @@
 # SubLens
 
-![GitHub](https://img.shields.io/github/license/yourusername/subdomain-enumerator) ![GitHub issues](https://img.shields.io/github/issues/yourusername/subdomain-enumerator)
+![GitHub](https://img.shields.io/github/license/0xd3sp0/SubL3ns) ![GitHub issues](https://img.shields.io/github/issues/0xd3sp0/SubL3ns)
 
 A comprehensive Bash-based tool for passive subdomain enumeration using multiple sources such as Assetfinder, Subfinder, Findomain, CRT.SH, and more. The tool supports both single-domain and bulk scanning with parallel execution for faster results.
 
@@ -49,7 +49,7 @@ cd subdomain-enumerator
 
 ### Make the Script Executable
 ```bash
-chmod +x subdomain_enum.sh
+chmod +x subl3ns.sh
 ```
 ---
 ### Usage
@@ -57,11 +57,11 @@ chmod +x subdomain_enum.sh
 Run the script with the target domain or a file containing a list of domains:
 
 ```bash
-./subdomain_enum.sh -d example.com
+./subl3ns.sh -d example.com
 ```
 Or scan multiple domains from a file:
 ```bash
-./subdomain_enum.sh -l domains.txt
+./subl3ns.sh -l domains.txt
 ```
 ---
 
@@ -80,21 +80,21 @@ Or scan multiple domains from a file:
 ### Examples
 Basic usage for a single domain:
 ```bash
-./subdomain_enum.sh -d example.com
+./subl3ns.sh -d example.com
 ```
 Run tools in parallel and resolve live subdomains:
 ```bash
-./subdomain_enum.sh -d example.com -p -r
+./subl3ns.sh -d example.com -p -r
 ```
 Scan multiple domains from a file:
 ```bash
 
-./subdomain_enum.sh -l domains.txt -o /custom/path
+./subl3ns.sh -l domains.txt -o /custom/path
 ```
 Specify a custom output directory:
 ```bash
 
-./subdomain_enum.sh -d example.com -o /custom/path
+./subl3ns.sh -d example.com -o /custom/path
 ```
 ---
 ## Example Output
