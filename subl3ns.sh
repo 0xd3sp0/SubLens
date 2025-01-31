@@ -11,62 +11,34 @@ VERSION="2023-10-01"
 PRG=${0##*/}
 # Banner
 echo -e "${cyan}
-                                                                                         ._,_        
-                                                                             \`~}mOEOOOEbXY~\`        
-                                                                          .rh6KjVVVzsSZZZWddl,      
-                                                                       ,vA#Ba|v~:,,:!^vnmZZZWOn     
-                                                                    !}ZD8#BG?<r__\`  \`\`_=*YKZZZbW   
-                                                                .*26OZZd##8rx}Yr!:_.\`\`.--=ryZZZWK.  
-                                                             =LPRWZZZZZN##RY}}}xvvvv?^=-\`-,^VZZZSV  
-                             \`-,=!!!:-\`                   !nW6ZZZZZdN8QBBBBBB#Qw}}}}Yxvvvvvv?=--,*aZZZD^ 
-                        _~|z%0000000g8QdV;\`            _radZZZZdN8QBBBBBBBBBB##0c}}}}Yxvvvvvvv=--=uWZZOx 
-                     ,?VwswsXW000g8D%AHZRQ\$(        :?Vm0ZZdN8QBBBBBBBBBBB###Ou}}}}}Yxvvvvvv*_-:}WZZR? 
-                   =lwwwwwwwwwA08OnLx?LLLn0BA.  \`!vjtVVGQ8QBBBEgBBBBBBBBB####8wY}}}}Yxvvv^*,_<yZZWD- 
-                 \`Lswssssssssss6Q}Lll}jtnlzBBZrnwzV2waHWQBBBBB08BBBBBBBBB#####Ns}LYYLxvvvvnAWOA=   
-                .VwwwwwwwwwwwXmdB8QQ8bgER8Q#8K2VjhGZZZZZ0BBBBBBBBBB#############Q6hV}xxLVSO6j^     
-               \`ZwwwwwwaWROHw2znYvv}L?D#B#@@dZZZZZZZZZZZZZNB#######################QDZXnY|^\"\`       
-               -%wsssP6Rqmnlnx^^:\`.\`^6Q8@@@@@#dZZWWZd66ORDDN\$QB########QN%Kjuxr^=,.                  
-               \`%hwPERGV^jnl?^<!  GN##8#@@@@@@B8\$ajND%GXVlxsQ8g?:!=_\`                               
-                Y\$NNKVV2nz^<^***^!<?r^?vx|??~=,_      -vvm#BQn^^\`                                 
-                .bWVcYvvnn<^rvxvr<<<*??r^?vx|??~=,_      :88g0g880h\`                                 
-               _|ancur?v((<<*??r*:<<<<<<<^**rr~!!!=\`    ?OZZ0#BQ8d:                                 
-             -vhWho2zV}}L?^<<<<^}=,~^<<<<<^r<. =!!!!,~lAOQdWBQ8g6R,                                 
-            _|vxsZZqShKKa}?r*^<<*?*^;!^^*vY, \`_!>xoO%u<\`,VW8#8WdZ}                                  
-            (LLxVhZSZ%6dWZqXYrrrrrr~;xsqODDt^YhE6sx,      w##86O?                                   
-            ,rxaSHAWdDDDDRQ0a<<<<^Xm%EN\$088N0AY<=_\`    .!!z88888x:                                  
-             \`nDDDDDDDDD608D0l^^^?8DD\$888880Nm*_       udddddddddd:                                 
-             \`*jWDDDDDOW8QDDD\$EZ%g0DDNR0\$DDDDZv        \`zQxVQ?=D0:                                  
-            \`~*?xzAO6ZN#gDDDDDDDDDDDDDqDDAn*_          :Qo VB_ <BY                                  
-           -;<<<<?DQg##\$YdDDDDDDDDDDDDt^_             .N6\` SQ\`  jQ:                                 
-          _<<<<<VQ####8DDDDDDDDDDDDDDR?               H8_  Dd   \`$d\`                                
-         ,<<<<rd######\$DDDDDDDDDDDDDDd~              }B^  \`Qh    <BY                                
-        _<<<<LQ####B##QDDDDDDDDDDDDDDA_             ^B}   ,Bn     jQ:                               
-       -<<<<2B####8NQ##QNDDDDDDDDDDDDo             _8H    ;B|     .0%                               
-      .;<<>rQ####8DDD\$8QQ8\$DDDDDDDDDb*             b0-    (B>      ^Bx                              
-     .~<<;_jQ###QDDDDDDDDDDDDDDDDDDDA=            lQ=     nB,       tQ:                             
- \`,!<<<<<_  ~QBB8000\$\$\$\$\$\$\$\$NNNNDDDDW,           ^B(      hQ\`       .0%                             
- \`,<*^^<^\`  vD\$8#################Qo_,           _8H       6R         ^Bx                            
-  \`_*:r,-<\` agN88QQQQ88888888g8888\$}           \`d0.      \`QG          XQ,                           
-     .:     \$Q8888ggOO6\$\$Ndb%\$ggggggV\`         2Q!       _BV          .8Z                           
-            \$Qggggggz2zv\`_nwcZggg0EdZn:       rBv        !Bx           rBv                          
-           -A6ORN\$0gKK8_   YBBDWPhycL?,      =Qj         ?B^            sQ,                         
-            _^VytowXXzt-    YGlVnx<<<<!\`    .N6\`         YB:            .8Z                         
-             ,}?*rr?<       \`\` -vYr<<<<~\`   K8,          wB.             rBv                        
-             =}*<<<<.           \`r}?<<<<_  LB*           Z8               aQ.                       
-             ^Y^<^*=              ?}^!^r. ~Qn      -~xXqZ@#HSSY?r=.       -8j                       
-            \`Lv<<<=               ^}^!<: _8H-!vjqqHz(=\` -Bo    _^xtGSSStx^,vB*                      
-            ,}^<<~\`               rL<<~\`\`dB#@@#gqPKKKKKKd@8mmmmmmmmmmmq\$QQQ88g.                     
-            *|<<;\`                x?<<, zQ!             *Br                 \"Qj                     
-           \`L^<>-                .Y^<~ ?Bv              xB!                  LB^                    
-           =(<<,                 ,x<<-\`QX               VB-                  \`d\$                   
-          ,}*?~                 \`YYxx,RR\`               H8                    :Q2                   
-         ,0WOZG;                nOZZH8Q=                yz                     YB^                  
-          ?A%HSGc>\`             -xKb\$BOPV^                                     \`d\$                 
-            =v}Vyz|                |Bo**<,                                      :Q2                 
-                                  -8Z\`                                           }B~                
-                                  \`^\`.                                            \`^-                
-           
-                                                              @cyber${red}X${cyan}pertise
+
+                                  \`~xu1v~\`   
+                               -?Zhv~~|o66x  
+                            !LADB8}x^=,_<KEV 
+          \`,*}VJVL!     \`!zON8B##QnnYLL(,;dD~
+        _xhKKdQAJzPD\".~LhQB#Q####@dnnlYv;>dN_
+       !aKKKqb8DbO8#dPAdEQ######@@@BqV}LlAq! 
+       wKSddPnvrKB@@\$REDN\$Q#@@@#B8Oqen(<!-   
+       VRWjn(r!vZ8Q#Qhrr^|h#a>\`              
+      .}scvv*|?~***(*~=\\\`V\$BBo               
+     ,}m6W6sLr?r^Lyv=}nv;!N#0;               
+     \`lD\$88Q8v*P\$QQQW=\` \`uOQ8|               
+     \`*VD8Q888Q88DKL!   \`H?c?x               
+    -^rZ@@8g88888~      w=|r a,              
+   -^xB@##B888880.     v( V= .q              
+  -^!d@#88QQ8888a     =z  S.  *}             
+\`~*<-^Q########W:    .S   d    s:            
+  .  VBQQdPwb8QQn\`   P-   b    \`A            
+     ;KW6h^ ?Wa}(,  z!   -K     >n           
+      x^^\`    -v**\`(x   \`vq_     z:          
+     .v^_      <*~=8nseXyAP1zaaahV\$          
+     ~*,       *^\"S.\`\`\`\` V~       <n         
+    _}*       .n|G-      P-        z=        
+    !e%]-     ,l8K~      -         \`Z\`       
+       \`       ,?                   =^        
+       
+                       @cyber${red}X${cyan}pertise
+                              
 Get all possible passive subdomains
 ${end}"
 Usage() {
