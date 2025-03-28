@@ -224,13 +224,13 @@ enumerate_domain() {
             run_assetfinder \
             run_subfinder \
             run_findomain \
-            run_sublist3r \
             run_crtsh \
             run_anubis \
             run_rapiddns \
             run_wayback \
             run_abuseipdb \
             run_amass
+      run_sublist3r 
     else
         run_assetfinder
         run_subfinder
