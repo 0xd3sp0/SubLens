@@ -76,6 +76,7 @@ Or scan multiple domains from a file:
 |-p | --parallel|Run tools in parallel                       |Disabled             |
 |-h | --help    |Show help                                   |                     |
 |-v | --version |Show version                                |                     |
+|-e | --exclude |Comma-separated list of tools to exclude (e.g., assetfinder,subfinder)
 ---
 ### Examples
 Basic usage for a single domain:
