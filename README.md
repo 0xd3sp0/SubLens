@@ -17,7 +17,7 @@ A comprehensive Bash-based tool for passive subdomain enumeration using multiple
   - AbuseIPDB
   - Amass
 - Supports parallel execution for faster results.
-- Resolves live subdomains using `httprobe`.
+- Resolves live subdomains using `httpx`.
 - Aggregates results into a single output file.
 - Supports bulk scanning via a domain list file.
 - Gracefully handles missing tools and skips related tasks.
@@ -34,7 +34,7 @@ Ensure the following tools are installed on your system:
 - `sublist3r`
 - `curl`
 - `jq`
-- `httprobe`
+- `httpx`
 - `amass`
 - `parallel` (optional, for parallel execution)
 
