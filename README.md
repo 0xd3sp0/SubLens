@@ -87,6 +87,10 @@ Run tools in parallel and resolve live subdomains:
 ```bash
 ./subl3ns.sh -d example.com -p -r
 ```
+Run tools in exclude mode:
+```bash
+ subl3ns.sh -d example.com -e amass -p
+```
 Scan multiple domains from a file:
 ```bash
 
